@@ -21,3 +21,6 @@ try {
 
 console.warn(`somePackage.getPackageName() : ${somePackage.getPackageName()}`);
 console.warn(`anotherPackage.getPackageName() : ${anotherPackage.getPackageName()}`);
+
+console.log('somePackage should have a function named `doSomethingWithPackage1`', somePackage);
+console.log('anotherPackage should have a function named `doSomethingWithPackage2`', anotherPackage);
