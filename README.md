@@ -52,6 +52,10 @@ const moduleFederation = new ModuleFederationPlugin({
 
 The host app *should* be able to use functions of both packages. But since the pat of exposed files are the same, the module from the second remote is never loaded.
 
+**SOLVED**
+The related bug is [here](https://github.com/webpack/webpack.js.org/issues/5308). 
+The different remotes must have different names both in their `ModuleFederationPlugin` and in `package.json`.
+
 # Run the demo
 
 In each folders, run `npm install` and `npm run serve`.
